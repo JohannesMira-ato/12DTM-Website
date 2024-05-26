@@ -1,0 +1,13 @@
+/* Resets all default margins */
+* {
+    margin: 0%;
+}
+/* Styling for header */
+.header{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 3fr;
+    background-color: #0D0D07;
+    font-size: 40px;    
+    position: relative;
+    color: white;
+}
