@@ -6,8 +6,8 @@
 .header{
     display: grid;
     /* grid-template-columns: .5fr 1fr 1fr 1fr 1fr 3fr; */
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
-    background-color: #0D0D07;
+    grid-template-columns: .2fr 1fr 4.9fr 1fr .5fr 1fr 1fr;
+    background-color: #283138;
     font-size: 60px;    
     position: relative;
     color: white;
@@ -16,7 +16,7 @@
 /* Header Text Styling */
 .header-text{
     position: relative;
-    top: 25px;
+    top: 30px;
 }
 
 /* Changing colour for hyperlinks */
