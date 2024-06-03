@@ -24,3 +24,8 @@ a{
     color: white;
     text-decoration: none;
 }
+
+/* Styling for Hero section, will improve next sprint */
+.hero.trail{
+    background-color: blueviolet;
+}
