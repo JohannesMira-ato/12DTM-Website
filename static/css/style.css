@@ -29,3 +29,17 @@ a{
 .hero.trail{
     background-color: blueviolet;
 }
+
+.code-display{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    background-color: #1D1F27;
+    color: white;
+}
+
+.code-description{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    background-color: #1D1F27;
+    color: white;
+}
