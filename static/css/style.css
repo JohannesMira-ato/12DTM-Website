@@ -1,6 +1,7 @@
 /* Resets all default margins */
 * {
     margin: 0%;
+    background-color: #283138;
 }
 /* Styling for header */
 .header{
@@ -17,6 +18,7 @@
 .header-text{
     position: relative;
     top: 30px;
+    background: none;
 }
 
 /* Changing colour for hyperlinks */
@@ -29,17 +31,34 @@ a{
 .hero.trail{
     background-color: blueviolet;
 }
-
+/* Styling for the code being displayed */
 .code-display{
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
     background-color: #1D1F27;
     color: white;
 }
-
+/* Styling for the code description */
 .code-description{
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
     background-color: #1D1F27;
     color: white;
+}
+/* Styling for the footer */
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #283138;
+    text-align: center;
+    color: white;
+}
+/* Styling for footer title */
+.footer-title h1{
+    font-size: 60px;
+}
+/* Styling for the hyperlinks in the footer */
+.footer-href{
+    position: relative;
+    font-size: 60px;
 }
