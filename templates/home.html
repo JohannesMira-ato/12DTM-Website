@@ -43,16 +43,15 @@
                 
                 document.addEventListener("mousemove", 
                 (e)=>{
-                    cursor.x = e.clientX;
-                    cursor.y = e.clientY;
-                    console.log(cursor);
+                    cursor.x = event.clientX;
+                    cursor.y = event.clientY;
                 });
 
                 function draw(){
-                    let x = cursor.x
-                    let y = cursor.y
+                    let x = cursor.x;
+                    let y = cursor.y;
 
-                    dots.forEach((dot, index)=>{
+                    dots.forEach((dot, index) => {
                         const nextDot = dots[index+1]||
                         dots[0];
 
@@ -63,6 +62,7 @@
                         y+=(nextDot.offsetTop - dot.offsetTop)*0.5;
                     })
                 }
+                
                 setInterval(draw, 10)
             </script>
         </div>
