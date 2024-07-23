@@ -35,7 +35,11 @@
         </div>
         <div>
             <h1>Contact me: <br> 21401@burnside.school.nz</h1>
-            <div>Button Goes Here</div> 
+            <div><button onclick="copyemail()">Copy Email</button></div> 
+            <script>
+                function copyemail(){
+                  navigator.clipboard.writeText("21401@burnside.school.nz");}
+            </script>
         </div>
         <div>
             <a href="code.html" class="footer-href">Code</a>
