@@ -33,7 +33,16 @@
     </ul>
     <script> 
     const scrollers = document.queryAll(".scroller");
-    if ()
+    
+    if(!window.matchMedia("(prefers-reduced-motion:reduce)").matches){
+        addAnimation();
+    }
+
+    function addAnimation(){
+        scrollers.forEach(scroller => {
+            scroller.setAttribute("data-animated", true);
+        })
+    }
     </script>
     </div>
     <!-- Infinite scroll ends here -->

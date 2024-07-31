@@ -167,3 +167,9 @@ a{
     gap: 1rem;
 }
 
+.scroller[data-animated="true"]{
+    overflow: hidden;
+}
+.scroller[data-animated="true"] .scroller-inner{
+    flex-wrap: nowrap;
+}
