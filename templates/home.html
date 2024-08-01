@@ -26,24 +26,23 @@
     <!-- Infinite Scroll Starts Here -->
     <div class="scroller">
     <ul class="tag-list scroller-inner">
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-        <li>item 4</li>
+        <li>Wow</li>
+        <li>Infinite</li>
+        <li>Scrolling</li>
+        <li>Text</li>
+        <li>On</li>
+        <li>My</li>
+        <li>Website</li>
     </ul>
-    <script> 
-    const scrollers = document.queryAll(".scroller");
-    
-    if(!window.matchMedia("(prefers-reduced-motion:reduce)").matches){
-        addAnimation();
-    }
-
-    function addAnimation(){
-        scrollers.forEach(scroller => {
-            scroller.setAttribute("data-animated", true);
-        })
-    }
-    </script>
+    <ul class="tag-list scroller-inner" aria-hidden="true">
+        <li>Wow</li>
+        <li>Infinite</li>
+        <li>Scrolling</li>
+        <li>Text</li>
+        <li>On</li>
+        <li>My</li>
+        <li>Website</li>
+    </ul>
     </div>
     <!-- Infinite scroll ends here -->
     <!-- Footer starts here -->
