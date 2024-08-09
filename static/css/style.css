@@ -101,6 +101,10 @@ a{
     padding: 10px;
 }
 
+.code-text{
+    display: grid;
+    grid-template-columns: auto auto;
+}
 
 /* Styling for code description */
 .code-description-text{
@@ -126,7 +130,8 @@ a{
     grid-template-columns: 1fr 1fr;
     position: relative;
     left: 250px;
-    mcolor: white;
+    gap: 50vh;
+    color: white;
     max-width: 600px;
     /* outline: 3px solid #c8a2c8; */
 }
@@ -147,12 +152,12 @@ a{
 }
 
 .scroller{
-    font-size: 15px;
+    font-size: 30px;
     padding-block: 8px;
     border-block: 1px solid;
     overflow: hidden;
     user-select: none;
-
+    color: white;
     --gap: 20px;
     display: flex;
     gap: var(--gap);
@@ -176,4 +181,9 @@ a{
     to {
     transform: translateX(calc(-100% - var(--gap)));    
     }
+}
+
+.code1-code{
+    height: 400px;
+    width: 500px;
 }

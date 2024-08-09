@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
     <title>12DTM Project Website</title>
 </head>
+
 <body>
     <!-- Header Goes Here -->
     <header>
@@ -15,55 +17,59 @@
             <div></div>
             <div class="header-text"><a href="allcode.html">CODE</a></div>
             <div></div>
-            <div class="header-text"><a href="about.html">ABOUT</a></div>   
+            <div class="header-text"><a href="about.html">ABOUT</a></div>
             <div></div>
         </div>
     </header>
     <!-- Header Ends Here -->
     <br>
     <!-- Code display goes here -->
-    <div class = code-display>
+    <div class=code-display>
         <div></div>
         <div class="code-display-text">
             <h1>Back to Top Button</h1>
             <br>
-            <h3>
-                HTML: <br>
-                !button! onclick="gotop()" id="back-to-top" title="Go to top">Back to top !/button!
-                <br>
-                <br>
+            <div class="code-text">
+                <textarea class="code1-code" readonly>
+    <!-- HTML: -->
+    <button onclick="gotop()" id="back-to-top" title="Go to top">Back to top </button>
 
+    <!-- JavaScript: -->
+    <script>
+        let mybutton = document.getElementById("back-to-top")
 
-                JavaScript:
-                <br>
-                    let mybutton=document.getElementById("back-to-top")
-                    <br>
-        
-                    // When the button is pressed go to top
-                    <br>
-                    function gotop(){
-                        <br>
-                        document.documentElement.scrollTop = 0;
-                        <br>
-                    } <br>
-                    <br>
-                CSS:
-                <br>
-                #back-to-top{<br>
-                    border: none;<br>
-                    outline: none;<br>
-                    background-color: steelblue;<br>
-                    cursor: pointer; /* Add a mouse pointer on hover */ <br>
-                } <br>
-                <br>
-                #back-to-top:hover{<br>
-                    background-color: blue;<br>
-                } <br>
-                <br>
-                <br>
-            </h3>
+        // When the button is pressed go to top
+        function gotop() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- CSS: -->
+    <style>
+        #back-to-top {
+            border: none;
+            outline: none;
+            background-color: steelblue;
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+        }
+
+        #back-to-top:hover {
+            background-color: blue;
+        }
+    </style>
+</textarea>
+                <div><img src="../static/gifs/BackToTop.gif" alt="" height="400px" width="800px"></div>
+                <div><button onclick="copycode1()">Copy Back To Top Code</button>
+                    <script>
+                        function copycode1() {
+                            navigator.clipboard.writeText('')};
+                            
+                    </script>
+                </div>
             </div>
-        <div></div>
+        </div>
+    </div>
+    <div></div>
     </div>
     <!-- Code display ends here -->
     <br>
@@ -74,11 +80,9 @@
             <h2>Back to Top Code Explained</h2>
             <p>
                 This code is used to make a simple button that takes the user back to the top of the page.
-                This code is meant to be put at the bottom of the page before the end of the body tag so that 
-                it is used when the user is at the bottom of the page. The code is set split up into its HTML, CSS and JavaScript
-                components. IMPORTANT: Remove the "!" in the HTML and replace it with "<" or ">" depending on if it's at the start or end of the block
-
-            </p>
+                This code is meant to be put at the bottom of the page before the end of the body tag so that
+                it is used when the user is at the bottom of the page. The code is set split up into its HTML, CSS and
+                JavaScript.</p>
         </div>
         <div></div>
     </div>
@@ -91,19 +95,21 @@
         </div>
         <div>
             <h1>Contact me: <br> 21401@burnside.school.nz</h1>
-            <div><button onclick="copyemail()">Copy Email</button></div> 
+            <div><button onclick="copyemail()">Copy Email</button></div>
             <script>
-                function copyemail(){
-                  navigator.clipboard.writeText("21401@burnside.school.nz");}
+                                    function copyemail() {
+                                        navigator.clipboard.writeText("21401@burnside.school.nz");
+                }
             </script>
         </div>
         <div>
             <a href="code.html" class="footer-href">Code</a>
             <br><br><br>
             <a href="about.html" class="footer-href">About</a>
-        </div> 
+        </div>
     </div>
     <!-- Footer ends here -->
 
 </body>
+
 </html>

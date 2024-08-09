@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
     <title>12DTM Project Website</title>
 </head>
+
 <body>
     <!-- Header Goes Here -->
     <header>
@@ -15,25 +17,131 @@
             <div></div>
             <div class="header-text"><a href="allcode.html">CODE</a></div>
             <div></div>
-            <div class="header-text"><a href="about.html">ABOUT</a></div>   
+            <div class="header-text"><a href="about.html">ABOUT</a></div>
             <div></div>
         </div>
     </header>
     <!-- Header Ends Here -->
     <br>
     <!-- Code display goes here -->
-    <div class = code-display>
+    <div class=code-display>
         <div></div>
         <div class="code-display-text">
-            <h1>
-                <!-- Code Title Goes Here -->
-            </h1>
+            <h1>Infinite Scroll</h1>
             <br>
-            <h3>
-                <!-- Code Goes Here -->
-            </h3>
+            <div class="code-text">
+                <textarea class="code1-code" readonly>
+    <!-- Infinite scroll -->
+    <div class="scroller">
+        <a href="" class="scroller">
+            <ul class="tag-list scroller-inner">
+                <li>Infinite Scrolling Text Wow!!!</li>
+                <li>Click Me To See Code For Infinite Scrolling!</li>
+            </ul>
+            <br>
+            <ul class="tag-list scroller-inner" aria-hidden="true">
+                <li>Infinite Scrolling Text Wow!!!</li>
+                <li>Click Me To See Code For Infinite Scrolling!</li>
+            </ul>
+        </a>
+    </div>
+    <!-- CSS -->
+    <style>
+        .scroller {
+            font-size: 30px;
+            padding-block: 8px;
+            border-block: 1px solid;
+            overflow: hidden;
+            user-select: none;
+            color: rgb(0, 0, 0);
+            --gap: 20px;
+            display: flex;
+            gap: var(--gap);
+
+        }
+
+        .scroller ul {
+            list-style: none;
+            flex-shrink: 0;
+            min-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--gap);
+            /* background-color: aqua; */
+
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            to {
+                transform: translateX(calc(-100% - var(--gap)));
+            }
+        }
+    </style>
+</textarea>
+                <div><img src="../static/gifs/InfiniteScroll.gif" alt="" height="400px" width="800px"></div>
+                <div><button onclick="copycode2()">Copy Code</button>
+                    <script>
+                        function copycode2() {
+                            navigator.clipboard.writeText("    <!-- Infinite scroll -->
+                                < div class= "scroller" >
+                                <a href="" class="scroller">
+                                    <ul class="tag-list scroller-inner">
+                                        <li>Infinite Scrolling Text Wow!!!</li>
+                                        <li>Click Me To See Code For Infinite Scrolling!</li>
+                                    </ul>
+                                    <br>
+                                        <ul class="tag-list scroller-inner" aria-hidden="true">
+                                            <li>Infinite Scrolling Text Wow!!!</li>
+                                            <li>Click Me To See Code For Infinite Scrolling!</li>
+                                        </ul>
+                                </a>
+    </div >
+    < !--CSS -->
+                            <style>
+                                .scroller {
+                                    font - size: 30px;
+                                padding-block: 8px;
+                                border-block: 1px solid;
+                                overflow: hidden;
+                                user-select: none;
+                                color: rgb(0, 0, 0);
+                                --gap: 20px;
+                                display: flex;
+                                gap: var(--gap);
+
+        }
+
+                                .scroller ul {
+                                    list - style: none;
+                                flex-shrink: 0;
+                                min-width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: var(--gap);
+                                /* background-color: aqua; */
+
+                                animation: scroll 20s linear infinite;
+        }
+
+                                @keyframes scroll {
+                                    to {
+                                    transform: translateX(calc(-100% - var(--gap)));
+            }
+        }
+                            </style>
+")
+}
+
+
+                    </script>
+                </div>
             </div>
-        <div></div>
+        </div>
+    </div>
+    <div></div>
     </div>
     <!-- Code display ends here -->
     <br>
@@ -41,12 +149,14 @@
     <div class="code-description">
         <div></div>
         <div class="code-description-text">
-            <h2>
-                <!-- Code Desc Title Goes Here -->
-            </h2>
+            <h2>Back to Top Code Explained</h2>
             <p>
-                <!-- Code Desc Goes Here -->
-            </p>
+                This code is used to make a simple button that takes the user back to the top of the page.
+                This code is meant to be put at the bottom of the page before the end of the body tag so that
+                it is used when the user is at the bottom of the page. The code is set split up into its HTML, CSS and
+                JavaScript
+                components. IMPORTANT: Remove the "!" in the HTML and replace it with "<" or ">" depending on if it's at
+                    the start or end of the block </p>
         </div>
         <div></div>
     </div>
@@ -59,19 +169,21 @@
         </div>
         <div>
             <h1>Contact me: <br> 21401@burnside.school.nz</h1>
-            <div><button onclick="copyemail()">Copy Email</button></div> 
+            <div><button onclick="copyemail()">Copy Email</button></div>
             <script>
-                function copyemail(){
-                  navigator.clipboard.writeText("21401@burnside.school.nz");}
+                function copyemail() {
+                                navigator.clipboard.writeText("21401@burnside.school.nz");
+                            }
             </script>
         </div>
         <div>
             <a href="code.html" class="footer-href">Code</a>
             <br><br><br>
             <a href="about.html" class="footer-href">About</a>
-        </div> 
+        </div>
     </div>
     <!-- Footer ends here -->
 
 </body>
+
 </html>
