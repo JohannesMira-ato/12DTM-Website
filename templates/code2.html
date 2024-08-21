@@ -81,63 +81,7 @@
     </style>
 </textarea>
                 <div><img src="../static/gifs/InfiniteScroll.gif" alt="" height="400px" width="800px"></div>
-                <div><button onclick="copycode2()">Copy Code</button>
-                    <script>
-                        function copycode2() {
-                            navigator.clipboard.writeText("    <!-- Infinite scroll -->
-                                < div class= "scroller" >
-                                <a href="" class="scroller">
-                                    <ul class="tag-list scroller-inner">
-                                        <li>Infinite Scrolling Text Wow!!!</li>
-                                        <li>Click Me To See Code For Infinite Scrolling!</li>
-                                    </ul>
-                                    <br>
-                                        <ul class="tag-list scroller-inner" aria-hidden="true">
-                                            <li>Infinite Scrolling Text Wow!!!</li>
-                                            <li>Click Me To See Code For Infinite Scrolling!</li>
-                                        </ul>
-                                </a>
-    </div >
-    < !--CSS -->
-                            <style>
-                                .scroller {
-                                    font - size: 30px;
-                                padding-block: 8px;
-                                border-block: 1px solid;
-                                overflow: hidden;
-                                user-select: none;
-                                color: rgb(0, 0, 0);
-                                --gap: 20px;
-                                display: flex;
-                                gap: var(--gap);
-
-        }
-
-                                .scroller ul {
-                                    list - style: none;
-                                flex-shrink: 0;
-                                min-width: 100%;
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                gap: var(--gap);
-                                /* background-color: aqua; */
-
-                                animation: scroll 20s linear infinite;
-        }
-
-                                @keyframes scroll {
-                                    to {
-                                    transform: translateX(calc(-100% - var(--gap)));
-            }
-        }
-                            </style>
-")
-}
-
-
-                    </script>
-                </div>
+                <div><button onclick="copycode2()">Copy Code</button></div>
             </div>
         </div>
     </div>
@@ -149,14 +93,12 @@
     <div class="code-description">
         <div></div>
         <div class="code-description-text">
-            <h2>Back to Top Code Explained</h2>
-            <p>
-                This code is used to make a simple button that takes the user back to the top of the page.
-                This code is meant to be put at the bottom of the page before the end of the body tag so that
-                it is used when the user is at the bottom of the page. The code is set split up into its HTML, CSS and
-                JavaScript
-                components. IMPORTANT: Remove the "!" in the HTML and replace it with "<" or ">" depending on if it's at
-                    the start or end of the block </p>
+            <h2>Infinite Scroll Explained</h2>
+            <p>This infinite scroll is meant to just be a block in the website that goes from one end to the other
+                having text scroll across it infitely. The code is meant to be entirely copy and pasted into the 
+                area where you want the infinite scrolling block to go. The text shown can be changed in the il tags.
+                This code uses only HTML and CSS.
+            </p>
         </div>
         <div></div>
     </div>
@@ -177,7 +119,7 @@
             </script>
         </div>
         <div>
-            <a href="code.html" class="footer-href">Code</a>
+            <a href="allcode.html" class="footer-href">Code</a>
             <br><br><br>
             <a href="about.html" class="footer-href">About</a>
         </div>

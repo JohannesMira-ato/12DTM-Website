@@ -30,7 +30,7 @@
             <h1>Back to Top Button</h1>
             <br>
             <div class="code-text">
-                <textarea class="code1-code" readonly>
+                <textarea class="code1-code" name="code1" id="code1" readonly>
     <!-- HTML: -->
     <button onclick="gotop()" id="back-to-top" title="Go to top">Back to top </button>
 
@@ -59,12 +59,14 @@
     </style>
 </textarea>
                 <div><img src="../static/gifs/BackToTop.gif" alt="" height="400px" width="800px"></div>
-                <div><button onclick="copycode1()">Copy Back To Top Code</button>
+                <div><button type="button" value="Refresh" onclick="copy_textarea(code1)">Copy Back To Top Code</button>
                     <script>
-                        function copycode1() {
-                            navigator.clipboard.writeText('')};
-                            
+                        function copy_textarea(id){
+                            document.getElementById(id).select();
+                            document.execCommand('copy');   
+                        }
                     </script>
+                    
                 </div>
             </div>
         </div>
@@ -97,13 +99,13 @@
             <h1>Contact me: <br> 21401@burnside.school.nz</h1>
             <div><button onclick="copyemail()">Copy Email</button></div>
             <script>
-                                    function copyemail() {
-                                        navigator.clipboard.writeText("21401@burnside.school.nz");
+                function copyemail() {
+                    navigator.clipboard.writeText("21401@burnside.school.nz");
                 }
             </script>
         </div>
         <div>
-            <a href="code.html" class="footer-href">Code</a>
+            <a href="allcode.html" class="footer-href">Code</a>
             <br><br><br>
             <a href="about.html" class="footer-href">About</a>
         </div>
