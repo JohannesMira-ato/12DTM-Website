@@ -188,3 +188,35 @@ a{
     height: 400px;
     width: 500px;
 }
+
+.page-button{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.next-page{
+    position: relative;
+    left: 44.5rem;
+}
+
+.page-href{
+    color: black;
+}
+
+.previous-page{
+    position: relative;
+    left: 12rem;
+}
+
+.home-hero{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+}
+
+.home-text{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}

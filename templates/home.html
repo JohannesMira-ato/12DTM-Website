@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <title>12DTM Project Website</title>
 </head>
+
 <body>
     <!-- Header Goes Here -->
     <header>
@@ -16,7 +18,7 @@
             <div></div>
             <div class="header-text"><a href="allcode.html">CODE</a></div>
             <div></div>
-            <div class="header-text"><a href="about.html">ABOUT</a></div>       
+            <div class="header-text"><a href="about.html">ABOUT</a></div>
             <div></div>
         </div>
     </header>
@@ -25,18 +27,34 @@
 
     <!-- Infinite Scroll Starts Here -->
     <div class="scroller">
-    <a href="code2.html" class="scroller">
-    <ul class="tag-list scroller-inner">
-        <li>Click Me To See Code For Infinite Scrolling!</li>
-        <li>Infinite Scrolling Text Wow!!!</li>
-    </ul>
-    <br>
-    <ul class="tag-list scroller-inner" aria-hidden="true">
-        <li>Click Me To See Code For Infinite Scrolling!</li>
-        <li>Infinite Scrolling Text Wow!!!</li>
-    </ul></a>
+        <a href="code2.html" class="scroller">
+            <ul class="tag-list scroller-inner">
+                <li>Click Me To See Code For Infinite Scrolling!</li>
+                <li>Infinite Scrolling Text Wow!!!</li>
+            </ul>
+            <br>
+            <ul class="tag-list scroller-inner" aria-hidden="true">
+                <li>Click Me To See Code For Infinite Scrolling!</li>
+                <li>Infinite Scrolling Text Wow!!!</li>
+            </ul>
+        </a>
     </div>
     <!-- Infinite scroll ends here -->
+    <div class="home-hero">
+        <div><img src="../static/images/homepage-img.png" alt=""></div>
+        <div>
+            <p class="home-text">
+                Website development combines coding, design and user
+                expereience to create visually appealing and functional websites.
+                Front-end development focuses on the user interface with HTML, CSS
+                and JavaScript, while back-end development manages server-side data
+                wand logic with languages like Python or PHP. The aim is to build 
+                engaging, responsive sites that effectively meet the user needs and
+                business goals.
+            </p>
+        </div>
+    </div>
+
     <!-- Footer starts here -->
     <div class="footer">
         <div class="footer-title">
@@ -45,18 +63,20 @@
         </div>
         <div>
             <h1>Contact me: <br> 21401@burnside.school.nz</h1>
-            <div><button onclick="copyemail()">Copy Email</button></div> 
+            <div><button onclick="copyemail()">Copy Email</button></div>
             <script>
-                function copyemail(){
-                  navigator.clipboard.writeText("21401@burnside.school.nz");}
+                function copyemail() {
+                    navigator.clipboard.writeText("21401@burnside.school.nz");
+                }
             </script>
         </div>
         <div>
             <a href="allcode.html" class="footer-href">Code</a>
             <br><br><br>
             <a href="about.html" class="footer-href">About</a>
-        </div> 
+        </div>
     </div>
     <!-- Footer ends here -->
 </body>
+
 </html>
